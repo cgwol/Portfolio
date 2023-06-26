@@ -1,0 +1,231 @@
+:root{
+    --light: #f2f2f2;
+    --highlight: #9999ff;
+    --dark: #000066;
+    --text-color: #00001a;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+header{
+    background: var(--dark);
+}
+
+h1{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+#header-name{
+    background: var(--highlight);
+    padding: 8px;
+    padding-left: 30px;
+}
+
+nav{
+    float: right;
+    margin-top: 58px;
+    margin-right: 10px;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--light);
+}
+
+nav ul li a{
+    color: var(--light);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#hero-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center 25%;
+    padding-bottom: 40px;
+}
+
+#hero-text{
+    background: var(--highlight);
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 700;
+    float: right;
+    position: relative;
+    bottom: 150px;
+    padding-right: 15px;
+    padding: 8px;
+}
+
+.flex-container{
+    display: flex;
+    padding-bottom: 40px;
+    width: 85%;
+}
+
+main h2{
+    font-size: 30px;
+    font-weight: 600;
+    width: 20%;
+    text-align: right;
+    border-right: var(--dark) solid 3px;
+    padding-right: 10px;
+}
+
+p{
+    width: 80%;
+    padding-left: 15px;
+    line-height: 1.2;
+    font-size: 1.05rem;
+}
+
+#cards{
+    width: 80%;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main-card{
+    width: 100%;
+    border: var(--highlight) solid 4px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+#card{
+    height: 150px;
+    width: 48%;
+    border: var(--highlight) solid 5px;
+    margin-bottom: 20px;
+}
+
+#work img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .65;
+    transition: opacity .4s ease;
+}
+
+#work img:hover{
+    opacity: 1.0;
+}
+
+.card-tag{
+    background: var(--highlight);
+    color: var(--dark);
+    position: relative;
+    bottom: 80px;
+    padding: 10px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text{
+    font-size: 1.05rem;
+}
+
+#contact ul{
+    width: 80%;
+    padding-left: 15px;
+    font-size: 1.05rem;
+}
+
+#contact ul li{
+    display: inline-block;
+    width: 22%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#contact ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#contact ul li a:visited{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--highlight);
+    color: var(--text-color);
+    padding: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .flex-container{
+        flex-direction: column;
+        width: 95%;
+        margin: 5px;
+    }
+
+    main h2{
+        font-size: 30px;
+        font-weight: 600;
+        width: 100%;
+        text-align: left;
+        border-right: none;
+        border-bottom: var(--dark) solid 3px;
+        padding-right: none;
+        padding-left: 5px;
+    }
+
+    p{
+        padding-top: 10px;
+        width: 100%;
+        line-height: 1.2;
+        font-size: 1.05rem;
+    }
+
+    #cards{
+        padding-top: 10px;
+        width: 100%;
+        padding-left: none;
+    }
+
+    #card{
+        width: 100%;
+    }
+
+    #contact ul li{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+
+}
